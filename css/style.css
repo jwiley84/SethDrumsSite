@@ -1,0 +1,138 @@
+#smolicon{
+    width: 100px;
+    /* height: 50px; */
+    margin: 0 auto 0 auto;
+}
+
+.navbar-nav > li > a {
+    font-size: 150%;
+    color: rgb(255, 187, 0);
+    font-family: 'Monoton', sans-serif;
+}
+p, h2 {
+    font-family: 'Genos', sans-serif;
+    font-size: 150%;
+}
+.weird {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;    
+}
+.socials {
+    color: white;
+}
+
+#splashbody {
+    background: url("../static/seth_bg.jpg") no-repeat center fixed;
+    background-size: cover;
+}
+
+.darkarts {
+    background: rgba(0,0,0,0) !important;
+}
+
+.scrolled {
+    background: rgb(204, 33, 167) !important;
+    transition: background-color 200ms linear;
+  }
+
+.marginoverride {
+    margin: 24vh auto;
+  }
+
+  .btn-synth {
+    background: blue;
+  }
+
+  #countdown {
+    color: white;
+  }
+
+  .shifted {
+    padding-top: 6em !important;
+  }
+
+  #fam-text {
+    color: rgb(255, 187, 0);
+    font-family: 'Monoton', sans-serif;
+    font-size: 400%;
+}
+
+hr {
+    background-color: rgb(255, 187, 0);
+    min-width: 50%;
+    height: 3px;
+    border: none;
+    margin: auto;
+    position: relative;
+    
+}
+
+.avatar {
+    width: 15%;
+    /* height: 100px; */
+    margin: 10px;
+    border: 10px solid rgb(255, 187, 0);
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+}
+
+.carousel-item {
+    height: 350px;
+}
+
+.who {
+    color: gray;
+}
+.carousel-cap {
+    position: absolute;
+    right: 20%;
+    left: 20%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    text-align: center;
+    color: rgb(255, 0, 234);
+}
+
+
+.footy {
+    border-radius: 25px;
+    background: url("../static/footer.png");
+    padding: 20px;
+    width: 100%;
+    height: 250px;
+}
+
+  /* credit to https://codeconvey.com/css-hexagon-image-with-border/ for the hex code */
+  .hex {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 320px;
+    height: 277.12px; /* width * 0.866 */
+    background: rgb(255, 0, 234);
+    background-image: linear-gradient(yellow, rgb(255,0,234));
+    box-sizing: border-box;
+    -webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+    -moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+  }
+
+  .hex-background {
+    position: absolute;
+    background-color: orange; /*color of the main-background*/
+    top: 2px; /* equal to border thickness */
+    left: 2px; /* equal to border thickness */
+    width: 316px; /* container height - (border thickness * 2) */
+    height: 273.12px; /* container height - (border thickness * 2) */
+    -webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+    -moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+  }
+
+  .hex img {
+    position: absolute;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    -webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+    -moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+  }
