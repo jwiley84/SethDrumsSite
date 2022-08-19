@@ -47,7 +47,7 @@ var getStreamSked = function(){
     }).then(function(data) {
         sked = data.data.segments[0].start_time
         console.log(sked)
-    })
+    }) 
 };
 
 var countdown = function (nextStream) {
@@ -73,7 +73,7 @@ var countdown = function (nextStream) {
                                dateStart.getUTCMinutes(),
                                dateStart.getUTCSeconds());
         // console.log(dateStart);
-        console.log(nextStream)
+        //console.log(nextStream)
       var timeRemaining = parseInt((nextStream - dateStart.getTime()) / 1000)
         // console.log(timeRemaining)
       if ( timeRemaining >= 0 ) {
