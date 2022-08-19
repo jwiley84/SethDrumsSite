@@ -1,22 +1,36 @@
+/* Road Rage might need a commercial liscence */
+@font-face {
+    font-family: 'Road-Rage';
+    src: url(../fonts/rr/Road_Rage.otf);
+}
+
+@font-face {
+    font-family: 'VCR';
+    src: url(../fonts/VCR_OSD_MONO_1.001.ttf);
+}
+
 #smolicon{
-    width: 100px;
+    width: 50px;
     /* height: 50px; */
     margin: 0 auto 0 auto;
 }
 
 .navbar-nav > li > a {
-    font-size: 150%;
+    font-size: 2rem;
     color: rgb(255, 187, 0);
-    font-family: 'Monoton', sans-serif;
+    font-family: 'Road-Rage', sans-serif;
 }
-p, h2 {
-    font-family: 'Genos', sans-serif;
+
+p, h2, .list-unstyled > li {
+    font-family: 'Teko', sans-serif;
     font-size: 150%;
 }
+
 .weird {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;    
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 800;    
 }
+
 .socials {
     color: white;
 }
@@ -31,29 +45,29 @@ p, h2 {
 }
 
 .scrolled {
-    background: rgb(204, 33, 167) !important;
-    transition: background-color 200ms linear;
-  }
+background: rgb(29, 16, 41) !important;
+transition: background-color 200ms linear;
+}
 
 .marginoverride {
-    margin: 24vh auto;
-  }
+margin: 24vh auto;
+}
 
-  .btn-synth {
-    background: blue;
-  }
 
-  #countdown {
+#countdown {
+    float: left;
     color: white;
-  }
+    font-size: 2rem;
+    font-family: 'VCR', sans-serif;
+}
 
-  .shifted {
+.shifted {
     padding-top: 6em !important;
-  }
+}
 
-  #fam-text {
+#fam-text {
     color: rgb(255, 187, 0);
-    font-family: 'Monoton', sans-serif;
+    font-family: 'Road-Rage', sans-serif;
     font-size: 400%;
 }
 
@@ -84,6 +98,7 @@ hr {
 .who {
     color: gray;
 }
+
 .carousel-cap {
     position: absolute;
     right: 20%;
@@ -94,46 +109,51 @@ hr {
     color: rgb(255, 0, 234);
 }
 
-
 .footy {
     border-radius: 25px;
     background: url("../static/footer.png");
     padding: 20px;
     width: 100%;
-    height: 250px;
+    height: 100%;
 }
 
+.btn-secondary {
+    background-color: rgb(255, 187, 0) !important;
+    font-family: 'Orbitron' !important;
+    color:rgb(29, 16, 41) !important;
+    border-color: rgb(255, 187,0) !important;
+}
 
-  /* credit to https://codeconvey.com/css-hexagon-image-with-border/ for the hex code */
-  .hex {
-    display: block;
-    margin: 0 auto;
-    position: relative;
-    width: 320px;
-    height: 277.12px; /* width * 0.866 */
-    background: rgb(255, 0, 234);
-    background-image: linear-gradient(yellow, rgb(255,0,234));
-    box-sizing: border-box;
-    -webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
-    -moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
-  }
+/* credit to https://codeconvey.com/css-hexagon-image-with-border/ for the hex code */
+.hex {
+display: block;
+margin: 0 auto;
+position: relative;
+width: 320px;
+height: 277.12px; /* width * 0.866 */
+background: rgb(255, 0, 234);
+background-image: linear-gradient(yellow, rgb(255,0,234));
+box-sizing: border-box;
+-webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+-moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+}
 
-  .hex-background {
-    position: absolute;
-    background-color: orange; /*color of the main-background*/
-    top: 2px; /* equal to border thickness */
-    left: 2px; /* equal to border thickness */
-    width: 316px; /* container height - (border thickness * 2) */
-    height: 273.12px; /* container height - (border thickness * 2) */
-    -webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
-    -moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
-  }
+.hex-background {
+position: absolute;
+background-color: orange; /*color of the main-background*/
+top: 2px; /* equal to border thickness */
+left: 2px; /* equal to border thickness */
+width: 316px; /* container height - (border thickness * 2) */
+height: 273.12px; /* container height - (border thickness * 2) */
+-webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+-moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+}
 
-  .hex img {
-    position: absolute;
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover;
-    -webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
-    -moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
-  }
+.hex img {
+position: absolute;
+width: 100%; 
+height: 100%; 
+object-fit: cover;
+-webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+-moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+}
