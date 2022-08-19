@@ -79,7 +79,11 @@ var countdown = function (nextStream) {
       if ( timeRemaining >= 0 ) {
         days    = parseInt(timeRemaining / 86400);
         timeRemaining   = (timeRemaining % 86400);
-        hours   = parseInt(timeRemaining / 3600) + 7; //this will need to be manually set for seth's timezone until I can fix it
+        hours   = parseInt(timeRemaining / 3600) + 7; //fix this for seth's timezone
+        if (hours >= 24) {
+            days += 1;
+            hours -= 24;
+        } 
         timeRemaining   = (timeRemaining % 3600);
         minutes = parseInt(timeRemaining / 60);
         timeRemaining   = (timeRemaining % 60);
