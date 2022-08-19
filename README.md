@@ -1,1 +1,1 @@
-"# Rough landing page idea" 
+Have fun!
