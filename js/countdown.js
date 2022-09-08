@@ -219,6 +219,7 @@ var makeCall = function () {
                             //livehide.style = "color: rgba(255, 0, 0, 0) !important"
                             countdownColor.style = "color: rgb(255, 0, 0) !important"
                             noworlater.innerHTML = "STREAMING NOW!"
+                            noworlater.style = "text-shadow: 2px 2px 8px #000"
                             twitchbtn.innerHTML = "LIVE NOW ON TWITCH"
                         }
                         else {

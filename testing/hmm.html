@@ -1,0 +1,216 @@
+<html><head></head><body>@import &#34;
+    compass/css3&#34;
+    ;
+     @import url(&#39;
+    https://fonts.googleapis.com/css?family=Lato:100&#39;
+    );
+     .sexytabs &gt;
+     ul {
+         text-align: center;
+         font-weight: 500;
+         margin: 50px 0 0;
+         padding: 0;
+         position: relative;
+         border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+         z-index: 1;
+    }
+     .sexytabs &gt;
+     ul &gt;
+     li {
+         display: inline-block;
+         background: #fafafa;
+         padding: 0.6em 0;
+         position: relative;
+         width: 33%;
+         margin: 0 0 0 -4px;
+    }
+     .sexytabs &gt;
+     ul &gt;
+     li:before, .sexytabs &gt;
+     ul &gt;
+     li:after {
+         opacity: 0;
+         transition: 0.3s ease;
+    }
+     .sexytabs &gt;
+     ul &gt;
+     li.ui-tabs-active:before, .sexytabs &gt;
+     ul &gt;
+     li.ui-tabs-active:after, .sexytabs &gt;
+     ul &gt;
+     li.ui-state-hover:before, .sexytabs &gt;
+     ul &gt;
+     li.ui-state-hover:after, .sexytabs &gt;
+     ul &gt;
+     li.ui-state-focus:before, .sexytabs &gt;
+     ul &gt;
+     li.ui-state-focus:after {
+         opacity: 1;
+    }
+     .sexytabs &gt;
+     ul &gt;
+     li:before, .sexytabs &gt;
+     ul &gt;
+     li.ui-state-active.ui-state-hover:before, .sexytabs &gt;
+     ul &gt;
+     li.ui-state-active.ui-state-focus:before {
+         content: &#34;
+        &#34;
+        ;
+         position: absolute;
+         z-index: -1;
+         box-shadow: 0 2px 3px rgba(22, 195, 255, 0.5);
+         top: 50%;
+         bottom: 0px;
+         left: 5px;
+         right: 5px;
+         border-radius: 100px / 10px;
+    }
+     .sexytabs &gt;
+     ul &gt;
+     li:after, .sexytabs &gt;
+     ul &gt;
+     li.ui-state-active.ui-state-hover:after, .sexytabs &gt;
+     ul &gt;
+     li.ui-state-active.ui-state-focus:after {
+         content: &#34;
+        &#34;
+        ;
+         background: #fafafa;
+         position: absolute;
+         width: 12px;
+         height: 12px;
+         left: 50%;
+         bottom: -6px;
+         margin-left: -6px;
+         transform: rotate(45deg);
+         box-shadow: inset 3px 3px 3px rgba(22, 195, 255, 0.5), inset 1px 1px 1px rgba(0, 0, 0, 0.3);
+    }
+     .sexytabs &gt;
+     ul &gt;
+     li.ui-state-hover:before, .sexytabs &gt;
+     ul &gt;
+     li.ui-state-focus:before {
+         box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    }
+     .sexytabs &gt;
+     ul &gt;
+     li.ui-state-hover:after, .sexytabs &gt;
+     ul &gt;
+     li.ui-state-focus:after {
+         box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.2), inset 1px 1px 1px rgba(0, 0, 0, 0.3);
+    }
+     .sexytabs &gt;
+     ul &gt;
+     li.ui-state-focus a {
+         text-decoration: underline;
+    }
+     .sexytabs &gt;
+     ul &gt;
+     li:focus {
+         outline: none;
+    }
+     .sexytabs &gt;
+     ul &gt;
+     li a {
+         color: #444;
+         text-decoration: none;
+    }
+     .sexytabs &gt;
+     ul &gt;
+     li a:focus {
+         outline: none;
+    }
+     .sexytabs &gt;
+     ul &gt;
+     li a span {
+         position: relative;
+         top: -0.5em;
+    }
+     .sexytabs.dark &gt;
+     ul {
+         border-bottom-color: rgba(255, 255, 255, 0.3);
+    }
+     .sexytabs.dark &gt;
+     ul &gt;
+     li {
+         background: #333;
+    }
+     .sexytabs.dark &gt;
+     ul &gt;
+     li:before, .sexytabs.dark &gt;
+     ul &gt;
+     li.ui-state-active.ui-state-hover:before, .sexytabs.dark &gt;
+     ul &gt;
+     li.ui-state-active.ui-state-focus:before {
+         box-shadow: 0 2px 3px rgba(255, 255, 255, 0.3);
+    }
+     .sexytabs.dark &gt;
+     ul &gt;
+     li:after, .sexytabs.dark &gt;
+     ul &gt;
+     li.ui-state-active.ui-state-hover:after, .sexytabs.dark &gt;
+     ul &gt;
+     li.ui-state-active.ui-state-focus:after {
+         background: #333;
+         box-shadow: inset 3px 3px 3px rgba(255, 255, 255, 0.3), inset 1px 1px 1px rgba(255, 255, 255, 0.5);
+    }
+     .sexytabs.dark &gt;
+     ul &gt;
+     li.ui-state-hover:before, .sexytabs.dark &gt;
+     ul &gt;
+     li.ui-state-focus:before {
+         box-shadow: none;
+    }
+     .sexytabs.dark &gt;
+     ul &gt;
+     li.ui-state-hover:after, .sexytabs.dark &gt;
+     ul &gt;
+     li.ui-state-focus:after {
+         box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.4);
+    }
+     .sexytabs.dark &gt;
+     ul &gt;
+     li a {
+         color: white;
+    }
+     img {
+         width: 60px;
+         float: left;
+         margin: 0 1em 1em 0;
+         border-radius: 3px;
+    }
+     body {
+         font-size: 1em;
+         background: #fafafa;
+         font-family: Lato;
+         font-weight: 300;
+    }
+     h1 {
+         text-align: center;
+         font-size: 20px;
+    }
+     .sexytabs {
+         width: 90%;
+         min-width: 360px;
+         margin: auto;
+    }
+     .contents {
+         padding: 20px 50px;
+         min-height: 200px;
+    }
+     .darkpage {
+         background: #333;
+         color: white;
+    }
+     .darkpage, .lightpage {
+         padding: 50px 0;
+    }
+     @media screen and (min-width: 1000px) {
+         .darkpage, .lightpage {
+             width: 50%;
+             float: left;
+             padding: 0;
+        }
+    }
+     </body></html>

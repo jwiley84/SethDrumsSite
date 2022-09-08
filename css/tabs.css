@@ -1,0 +1,128 @@
+.wrapper {
+    margin: 5% auto;
+    width: 80%;
+    font-family: 'Teko', sans-serif;
+    color: #98927C;
+    /* font-size: 14px; */
+    /* line-height: 24px; */
+    /* max-width: 600px; */
+    min-width: 340px;
+    overflow: hidden;
+    height: 100%;
+}
+.tabs li {
+    list-style: none;
+    float: left;
+    width: 20%;
+}
+.tabs a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    text-transform: uppercase;
+    /* color: #fff !important; */
+    height: 70px;
+    line-height: 90px;
+    background: linear-gradient(165deg,transparent 29%,rgb(255, 187, 0) 30%) !important; /* This changes the color of the darker tab in the back*/
+    font-size: 150%;
+}
+.tabs a:hover, .tabs a.active {
+    background: linear-gradient(165deg,transparent 29%,rgb(29, 16, 41) 30%) !important; /* this changes the color of the lighter tab in the front */
+}
+.tabs a:before {
+    content: '';
+    position: absolute;
+    z-index: 11;
+    left: 100%;
+    top: -100%;
+    height: 70px;
+    line-height: 90px;
+    width: 0;
+    border-bottom: 70px solid rgba(0,0,0,0.1);
+    border-right: 7px solid transparent;
+}
+.tabs a.active:before {
+    content: '';
+    position: absolute;
+    z-index: 11;
+    left: 100%;
+    top: -100%;
+    height: 70px;
+    line-height: 90px;
+    width: 0;
+    border-bottom: 70px solid rgba(0,0,0,0.2);
+    border-right: 20px solid transparent;
+}
+.tabgroup {
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
+}
+.tabgroup div {
+    padding: 1.5vw;
+    background: rgb(29, 16, 41); /* this changes the color of the whole box*/ 
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    min-height: 70px;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+::after, ::before {
+    box-sizing: content-box !important;
+}
+
+.clearfix {
+    margin-bottom: 0 !important;
+    padding-left: 0 !important;
+}
+
+.tabnames {
+    color: rgb(255, 0, 234) !important; 
+    font-family: 'Road-Rage', sans-serif;
+    font-size: 2vw !important;
+    padding-left: 3vw;
+    
+}
+
+.youtube-container {
+    display: flex;
+    justify-content: center;
+}
+
+.ytvids {
+    border: 2px solid orange;
+    /* margin: 5%; */
+    min-width: 95% !important;
+    max-width: 95% !important;
+}
+
+.tiktok-container {
+    background-image: url('../static/tiktoklogo2.png') !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tiktokimg {
+    border: 5px solid orange;
+}
+
+.tiktoknodecor {
+    /* border: 5px solid orange; */
+    text-decoration: none;    
+    color: white;
+    /* font-weight: 400 !important; */
+}
+
+.tiktoknodecor > p {
+    font-size: 200% !important;
+}
+.tiktoknodecor:hover {
+    color:rgb(255, 0, 234) !important;
+}
+
+.spotifyimg {
+    margin-bottom: 5%;
+}

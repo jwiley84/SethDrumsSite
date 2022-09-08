@@ -9,6 +9,11 @@
     src: url(../fonts/VCR_OSD_MONO_1.001.ttf);
 }
 
+body {
+    background: rgb(250,250,250) !important;
+}
+
+
 #smolicon{
     width: 50px;
     /* height: 50px; */
@@ -53,15 +58,20 @@ background: rgb(29, 16, 41) !important;
 transition: background-color 200ms linear;
 }
 
+.card {
+    border-color: rgba(0,0,0,1) impr !important;
+}
+
 .marginoverride {
 margin: 21.5vh auto;
 }
 
 .famcardy  {
-    max-height: 100px;
+    margin: 1%;
 }
 
 .famcard {
+    margin: 2% auto 3% auto;
     max-width: 100%;
     max-height: 75%;
     display: flex;
@@ -115,9 +125,9 @@ hr {
     -moz-border-radius: 500px;
 }
 
-.carousel-item {
+/* .carousel-item {
     height: 350px;
-}
+} */
 
 .who {
     color: gray;
@@ -184,29 +194,68 @@ hr {
 	}
 }
 
+::after, ::before {
+    box-sizing: content-box !important;
+}
 
-/* .para-img > .para-bg > img
-.para-img {
-    padding: 100px;
+.tabnames {
+    color: rgb(255, 0, 234) !important; 
+    font-family: 'Road-Rage', sans-serif;
+    font-size: 4vh !important;
 }
-.para-bg {
-    width: 120px;
-    height: 120px;
-    -webkit-transform: skewX(-50deg);
-    -ms-transform: skewX(-50deg);
-    transform: skewX(-50deg);
-    overflow: hidden;
-    text-align: center;
-    position: relative;
+
+
+/* .youtube-container {
+    display: flex;
+    justify-content: center;
 }
-.para-bg img {
-    -webkit-transform: skewX(50deg);
-    -ms-transform: skewX(50deg);
-    transform: skewX(50deg);
-    position: absolute;
-    top: -87px;
-    left: -90px;
+
+.ytvids {
+    border: 2px solid orange;
+    margin: 5%;
+    max-width: 95% !important;
+}
+.tiktok-container {
+    display: flex;
+    justify-content: center;
+}
+.ttvids {
+    border: 2px solid orange;
+     max-width: 95% !important; 
+}
+
+.column-tt {
+    float: left;
+    width: 25%;
+    padding: 5px;
 } */
+
+/*FREAKING ABOUT IMAGES, FINALLY*/
+.triangleimagediv { /*this hold them both*/
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .bg-triange { /*this is the triangle*/
+    position: relative;
+    top: 0;
+    left: 0;
+    /*border: 1px rgb(26, 23, 23) solid;*/
+  }
+  .imgcircle { /*this is the actual picture*/
+    position: absolute;
+    top: 17%;
+    left: 25%;
+    width: 80%;
+    height: 70%;
+    object-fit: cover;
+    border:5px solid rgb(255, 187, 0);
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+  }
+
+
 
 
 /* MOVE TO CARDS FOR FAM SECTION */
@@ -229,8 +278,8 @@ position: absolute;
 background-color: orange; /*color of the main-background*/
 top: 2px; /* equal to border thickness */
 left: 2px; /* equal to border thickness */
-width: 316px; /* container height - (border thickness * 2) */
-height: 273.12px; /* container height - (border thickness * 2) */
+width: 99%; /* container height - (border thickness * 2) */
+height: 99%; /* container height - (border thickness * 2) */
 -webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
 -moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
 }
